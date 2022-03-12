@@ -26,6 +26,12 @@ int main(void){
     scanf("%i", &p->idade); 
     
     printf("Nota: ");  
+    scanf("%f", &p->nota);
+
+    printf("\n\n");
+    printf("Nome do aluno: %s\n", p->nome);
+    printf("Idade do aluno: %i\n", p->idade);
+    printf("Nota do aluno: %.2f\n", p->nota);
 
     free(p); // liberando o malloc
 
