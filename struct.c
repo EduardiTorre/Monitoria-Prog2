@@ -1,6 +1,6 @@
 /* ************************************************************************ *
- *    struct.c, VERSION 1                                                      *
- *    funcao criada para mostrar autilização da lib pessoal                 *
+ *    struct.c, VERSION 1                                                   *
+ *    funcao criada para mostrar struc com ponteiros                        *
  *                                                                          *
  *    Copyright (C) 2022 by Jose Eduardo Oliveira Cavalcanti Lupa           *
  *                                                                          *
