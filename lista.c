@@ -72,10 +72,10 @@ int main(void){
 
 void inserir(lista **cabeca, int x){
     lista *pl=*cabeca; // 'pl' eh como sera usado o cabeca para q ele n se perca
-    lista *ant_plant = NULL; // ponteiro do anterior ao "pl"ant
+    lista *ant_pl = NULL; // ponteiro do anterior ao "pl"
 
     while(pl!=NULL){
-        ant_plant=pl; // o anterior pl recebe o pl atual
+        ant_pl=pl; // o anterior pl recebe o pl atual
         pl=pl->prox;  // e o pl apos deixar salvo o atual, muda para o proximo, fazendo o anterior pl ser agr o anterior
     } // esse ciclo faz com q o pl sempre seja o final da lista e o ant_pl o anterior ao final, que tem "valor salvo"
 
@@ -83,8 +83,8 @@ void inserir(lista **cabeca, int x){
     pl->valor = x; // na struct do pl, dps de alocado pode receber o valor a ser guardado, recebido na funcao como segundo parametro
     pl->prox=NULL; // faz com q o proximo q sera add na lista seja sempre null(sendo o final da lista)
     
-    if(ant_plant!=NULL) // se tem anteriro entao nao eh o primeiro item da lista
-        ant_plant->prox=pl; // faz com q a ultima struc->prox aponte para o novo pl q sera add no final da lista
+    if(ant_pl!=NULL) // se tem anteriro entao nao eh o primeiro item da lista
+        ant_pl->prox=pl; // faz com q a ultima struc->prox aponte para o novo pl q sera add no final da lista
     else
         *cabeca=pl;
 }
